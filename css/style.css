@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .menu {
     font-family: 'Playfair Display', serif;
     font-size: 1.125rem;
@@ -91,4 +92,99 @@
     padding: 10px;
     font-size: 1rem;
 
+=======
+.menu {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.125rem;
+    text-decoration: none;
+    background-color: #0A0A0A;
+    padding: 20px 0;
+
+}
+
+.container {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.menu .menu-title {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-nav {
+    flex: 1;
+}
+
+.menu-nav ul {
+    float: right;
+    display: flex;
+
+}
+
+.menu-nav ul li a {
+    padding: 10px;
+    margin: 0 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.menu-nav ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: #FBC403;
+    transition: width .3s;
+}
+
+.menu-nav ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+/* Hero Image */
+.intro {
+    height: 100vh;
+    background: url(../images/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+
+.intro-text {
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    padding-bottom: 25px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+.intro-text p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.intro-text a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FBC403;
+    padding: 10px;
+    font-size: 1rem;
+
+>>>>>>> ba606893901b7becd02ce847d99ef074158c9419
 }
