@@ -1,3 +1,6 @@
 const title = document.querySelector('.intro h1');
 
-console.log(title);
+title.addEventListener('click', () => {
+   // eslint-disable-next-line prettier/prettier
+   this.style.color = 'red';
+});
