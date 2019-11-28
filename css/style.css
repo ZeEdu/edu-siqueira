@@ -165,3 +165,8 @@ html {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
+
+.portifolio {
+  height: 100vh;
+  background-color: #0a0a0a;
+}
