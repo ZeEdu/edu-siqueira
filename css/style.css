@@ -1,94 +1,167 @@
+html {
+  scroll-behavior: smooth;
+}
 .menu {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.125rem;
-    text-decoration: none;
-    background-color: #0A0A0A;
-    padding: 20px 0;
-
+  font-family: "Playfair Display", serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+  background-color: #0a0a0a;
+  padding: 20px 0;
 }
 
 .container {
-    display: flex;
-    max-width: 1080px;
-    margin: 0 auto;
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .menu .menu-title {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f7ffd1;
 }
 
 .menu-nav {
-    flex: 1;
+  flex: 1;
 }
 
 .menu-nav ul {
-    float: right;
-    display: flex;
-
+  float: right;
+  display: flex;
 }
 
 .menu-nav ul li a {
-    padding: 10px;
-    margin: 0 15px;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #fff;
-    position: relative;
+  padding: 10px;
+  margin: 0 15px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #f7ffd1;
+  position: relative;
 }
 
 .menu-nav ul li a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0px;
-    bottom: 5px;
-    width: 0;
-    height: 2px;
-    background: #FBC403;
-    transition: width .3s;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  width: 0;
+  height: 2px;
+  background: #fbc403;
+  transition: width 0.3s;
 }
 
 .menu-nav ul li a:hover::after {
-    width: 100%;
-    transition: width .3s;
+  width: 100%;
+  transition: width 0.3s;
 }
 
-
 /* Hero Image */
-.intro {
-    height: 100vh;
-    background: url(../images/home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: red;
+.first-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/home.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 .intro-text {
-    text-align: center;
-    padding-top: 120px;
-    color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .intro-text h1 {
-    font-size: 44px;
-    padding-bottom: 25px;
-    font-family: 'Playfair Display';
-    font-style: italic;
+  font-size: 44px;
+  padding-bottom: 25px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  /* text-decoration: underline;
+  text-decoration-color: #fbc403; */
+}
+
+.intro-text h1::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 250px;
+  height: 2px;
+  background-color: #fbc403;
 }
 
 .intro-text p {
-    font-family: 'Raleway';
-    font-size: 24px;
-    padding-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  padding-bottom: 30px;
 }
 
 .intro-text a {
-    color: #fff;
-    text-decoration: none;
-    background-color: #FBC403;
-    padding: 10px;
-    font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #fbc403;
+  border: 1px solid #fbc403;
+  padding: 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
 
+.intro-text a:hover {
+  background-color: transparent;
+  border: 1px solid #fbc403;
+}
+
+.servicos {
+  height: 100vh;
+  background-color: #f7ffd1;
+}
+
+.servicos.container {
+  align-content: space-between;
+}
+
+.servicos .sectionTitle {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 42px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.servicos .sectionTitle::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 175px;
+  height: 2px;
+  background-color: #fbc403;
+}
+
+.servicos img {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+.servicos h2 {
+  text-align: center;
+}
+
+.servicos h2::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 2px;
+  background-color: #fbc403;
+}
+
+.servicos p {
+  margin: 20px 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
