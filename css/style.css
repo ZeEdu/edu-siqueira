@@ -157,7 +157,7 @@ html {
 
 .servicos h2,
 .portifolio h2 {
-    text-align: center
+    text-align: center;
 }
 
 .servicos h2::after,
@@ -288,6 +288,7 @@ html {
 .contato h3 {
     font-family: "Playfair Display", serif;
     font-size: 1.125rem;
+    font-weight: bold;
 }
 
 .contato h3::after {
@@ -301,12 +302,15 @@ html {
 
 .contato .redes-socias h3::after {
     width: 110px;
+
 }
 
 .contato .endereco h3::after {
     width: 50px;
 }
+
 .contato p {
-  margin-top: 5px;
-  margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.125rem;
 }
