@@ -104,15 +104,14 @@ html {
     color: #fff;
     text-decoration: none;
     background-color: #fbc403;
-    border: 1px solid #fbc403;
-    padding: 10px;
-    font-size: 1.5rem;
+    border: 3px solid #fbc403;
+    padding: 10px 15px;
+    font-size: 1.125rem;
     transition: 0.3s;
 }
 
 .intro-text a:hover {
     background-color: transparent;
-    border: 1px solid #fbc403;
 }
 
 .servicos,
@@ -155,12 +154,12 @@ html {
     margin: 20px auto;
 }
 
-.servicos h2,
+.servicos h3,
 .portifolio h2 {
     text-align: center;
 }
 
-.servicos h2::after,
+.servicos h3::after,
 .portifolio h2::after {
     content: "";
     display: block;
@@ -176,6 +175,18 @@ html {
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
+
+.btn-holder {
+    text-align: center;
+}
+
+.btn-holder .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
 
 /* Portifolio Slide */
 
@@ -276,7 +287,7 @@ html {
 }
 
 /* Contato */
-.redes-socias,
+.formulario,
 .endereco {
     width: 50%;
 }
@@ -285,13 +296,23 @@ html {
     display: flex;
 }
 
-.contato h3 {
+.sociais-holder img {
+    margin: 10px 10px 10px 0;
+}
+
+.contato h3,
+.contato h4 {
     font-family: "Playfair Display", serif;
     font-size: 1.125rem;
     font-weight: bold;
 }
 
-.contato h3::after {
+.contato h4 {
+    margin-top: 15px;
+}
+
+.contato h3::after,
+.contato h4::after {
     content: "";
     display: block;
     margin-top: 5px;
@@ -300,17 +321,50 @@ html {
     background-color: #fbc403;
 }
 
-.contato .redes-socias h3::after {
-    width: 110px;
-
-}
-
 .contato .endereco h3::after {
     width: 50px;
 }
 
-.contato p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.contato .endereco h4::after {
+    width: 110px;
+}
+
+.endereco>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.125rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+}
+
+input,
+textarea {
+    padding: 10px;
+    width: 80%;
+    border: solid #fbc403;
+    box-shadow: none;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #fbc403;
+    margin: 10px 0;
+    border: 3px solid #fbc403;
+    color: #000;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 1.125em;
+}
+
+.btn:hover {
+    background-color: transparent;
 }
